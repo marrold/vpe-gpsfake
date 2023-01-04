@@ -1,0 +1,10 @@
+version: "3.2"
+
+services:
+
+  gpsfake:
+    image: marrold/vpe-gpsfake
+    container_name: gpsfake
+    restart: unless-stopped
+    ports:
+      - 2947:2947
